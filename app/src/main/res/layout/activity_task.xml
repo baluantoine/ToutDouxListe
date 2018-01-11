@@ -5,20 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="exercicepje.sm.fr.toutdouxliste.TodoActivity">
+    tools:context="exercicepje.sm.fr.toutdouxliste.TaskActivity">
+    <TextView
+        android:id="@+id/textViewTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tache" />
+
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
 
     <Button
-        android:id="@+id/buttonAddTask"
+        android:id="@+id/buttonValider"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nouvelle Tache"
-        android:onClick="onAddTask"/>
-
-    <ListView
-        android:id="@+id/contactListView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:layout_marginTop="15dp"
-        android:choiceMode="singleChoice"/>
+        android:text="Valider"
+        android:onClick="onValid"/>
 </LinearLayout>
